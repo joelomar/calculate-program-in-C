@@ -6,45 +6,39 @@ int main() {
   int firtsNum;
   int secNum;
   int results;
-  char operator;
+  char opt;
 
 
-  printf("Insert your first number \n");
+  printf("Insert your first number \a \n");
   scanf(" %d", &firtsNum);
 
-  printf("Insert your math operator \n");
-  scanf(" %c", &operator);
+  printf("Insert your math operator \a \n");
+  scanf(" %c", &opt);
 
-  printf("Insert your second number \n");
+  printf("Insert your second number \a \n");
   scanf(" %d", &secNum);
 
 
-  switch(operator) {
+if (opt == '-') {
 
-     case '-':
-     results = firtsNum-secNum;
-     printf("Your results is: %d \n", results);
-     break;
+      results = firtsNum-secNum;
+      printf("Your results is: %d \a \n", results);
+}
+if (opt == '+') {
 
-     case '+':
-     results = firtsNum+secNum;
-     printf("Your results is:  %d \n", results);
-     break;
+      results = firtsNum+secNum;
+      printf("Your results is: %d \a \n", results);
+}
+if (opt == '/') {
 
-     case '/':
-     results = firtsNum/secNum;
-     printf("Your results is:  %d \n", results);
-     break;
+      results = firtsNum/secNum;
+      printf("Your results is: %d \a \n", results);
+}
+if (opt == '*') {
 
-     case '*':
-     results = firtsNum*secNum;
-     printf("Your results is:  %d \n", results);
-     break;
-
-     default:
-     printf("error calculating");
-
-     }
+      results = firtsNum*secNum;
+      printf("Your results is: %d \a \n", results);
+}
 
     printf("Press any key to kill the program  \n");
     getch();
